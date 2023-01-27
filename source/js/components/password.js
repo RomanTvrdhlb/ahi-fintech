@@ -13,6 +13,7 @@ if (pass === "72127387348") {
   AccessСonfirmed();
 } else {
   alert("密碼錯誤!");
+  AccessDenied();
   top.location.href = "";
 }
 
