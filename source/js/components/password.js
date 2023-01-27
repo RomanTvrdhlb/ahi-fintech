@@ -1,15 +1,25 @@
-const pass = prompt('输入密码');
+import {
+  addCustomClass,
+  removeCustomClass,
+} from "../functions/customFunctions";
+import vars from "../_vars";
 
-if (pass==='72127387348');
-else { 
-    alert('密碼錯誤!'); 
-    AccessDenied();
-    top.location.href="";
+const { bodyEl } = vars;
+
+const pass = prompt("输入密码");
+
+AccessDenied();
+if (pass === "72127387348") {
+  AccessСonfirmed();
+} else {
+  alert("密碼錯誤!");
+  top.location.href = "";
 }
 
 function AccessDenied() {
-    document.body.innerHTML = '訪問被拒絕!';
-    document.body.style.cssText = `
-     opacity: 0;
-    `;
-  }
+  addCustomClass(bodyEl, "active");
+}
+
+function AccessСonfirmed() {
+  removeCustomClass(bodyEl, "active");
+}

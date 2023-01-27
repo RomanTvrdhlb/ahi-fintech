@@ -18,7 +18,7 @@ body {
   color: var(--color-b);
 
   background-color: var(--body-bg);
-
+  
 
   @include tablet {
     width: 100%;
@@ -33,6 +33,11 @@ body {
 
     width: 100%;
     overflow: hidden;
+  }
+
+  &.active{
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
