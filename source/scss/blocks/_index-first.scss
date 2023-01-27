@@ -6,9 +6,10 @@
 
 
   &__box{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
   }
 
   &__inner{
@@ -17,13 +18,18 @@
     flex-direction: column;
     align-items: flex-start;
     grid-gap: 0.3rem;
+    flex: 1 1;
+  }
+
+  &__pic{
+    flex: 1 1;
   }
 
   &__title{
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
-    line-height: 1.2rem;
+    line-height: 0.6rem;
     font-size: .5rem;
     color: var(--color-d);
   }

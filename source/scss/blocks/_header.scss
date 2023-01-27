@@ -1,35 +1,32 @@
 header {
-background-color: var(--bg-a);
-width: 100vw;
-height: 0.72rem;
-display: block;
-position: relative;
+  background-color: var(--bg-a);
+  width: 100vw;
+  height: 0.72rem;
+  display: block;
+  position: relative;
 }
 
 .header {
   height: 0.72rem;
-  &-box{
-  display: flex;
-  height: 0.72rem;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
+  &-box {
+    display: flex;
+    height: 0.72rem;
+    justify-content: space-between;
+    background-color: transparent;
+  }
 }
-}
-
-
 
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 2rem;
   height: 0.72rem;
 
-  img,picture{
-    width: 100%;
+  img,
+  picture {
+    width: 1.5rem;
     height: auto;
     display: block;
   }
 }
-
-
