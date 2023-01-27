@@ -4,7 +4,7 @@ import {
 } from "../functions/customFunctions";
 import vars from "../_vars";
 
-const { bodyEl } = vars;
+const { htmlEl } = vars;
 const pass = prompt("输入密码");
 
 if (pass === "72127387348") {
@@ -15,5 +15,5 @@ if (pass === "72127387348") {
 }
 
 function AccessСonfirmed() {
-  removeCustomClass(bodyEl, "alert");
+  removeCustomClass(htmlEl, "hidden");
 }

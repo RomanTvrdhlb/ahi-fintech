@@ -9,7 +9,7 @@ body {
   min-height: -webkit-fill-available;
   margin: 0 auto;
   padding: 0;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   font-weight: inherit;
   font-size: inherit;
@@ -20,10 +20,10 @@ body {
   background-color: var(--body-bg);
   
 
-  @include tablet {
-    width: 100%;
-    overflow-x: hidden;
-  }
+  // @include tablet {
+  //   width: 100%;
+  //   overflow-x: hidden;
+  // }
   -webkit-text-size-adjust: 100%;
 
   &.fixed {
@@ -33,11 +33,6 @@ body {
 
     width: 100%;
     overflow: hidden;
-  }
-
-  &.alert{
-    opacity: 0;
-    visibility: hidden;
   }
 }
 
@@ -50,18 +45,26 @@ footer {
 html {
   box-sizing: border-box;
   width: 100%;
-  overflow-x: hidden;
-
+  background-color: #ffffff;
+  // overflow-x: hidden;
   font-weight: 400;
   font-size: 100px;
   line-height: normal;
   font-family: var(--font-family);
 
-  @include tablet {
-    width: 100%;
-    overflow-x: hidden;
-  }
+  // @include tablet {
+  //   width: 100%;
+  //   overflow-x: hidden;
+  // }
   scroll-behavior: smooth;
+
+  &.hidden{
+    background-color: #404040;
+    body{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 }
 
 *,
@@ -90,6 +93,7 @@ a {
 main {
   flex: 1 0 auto;
   min-height: 800px;
+  width: 100vw;
 }
 
 button {
