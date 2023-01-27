@@ -1,13 +1,40 @@
-
 .index-first {
-  padding-bottom: 29px;
+  display: block;
+  padding: 0.5rem 0 0;
+  margin: 0 auto;
+  background-color: var(--bg-a);
 
-@include tablet {
-    padding-bottom: clamp(32px, 2.602vw, 37px);
+
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    
   }
 
-@include mobile {
-    padding-bottom: 36px;
+  &__inner{
+    margin: 0 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 0.3rem;
+  }
+
+  &__title{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2rem;
+    font-size: .5rem;
+    color: var(--color-d);
+  }
+
+  &__content{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    line-height: .3rem;
+    font-size: .16rem;
+    color: var(--color-c);
   }
 }
 

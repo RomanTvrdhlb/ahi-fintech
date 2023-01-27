@@ -1,0 +1,15 @@
+.partners-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__item{
+        margin: 0.3rem;
+        img,picture{
+            object-fit: contain;
+            width: 200px;
+            height: 60px;
+        }
+    }
+}
