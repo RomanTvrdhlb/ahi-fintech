@@ -1,6 +1,6 @@
 const pass = prompt('输入密码');
 
-if (pass=='72127387348');
+if (pass==='72127387348');
 else { 
     alert('密碼錯誤!'); 
     AccessDenied();
